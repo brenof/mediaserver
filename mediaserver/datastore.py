@@ -1,13 +1,14 @@
 from psycopg2.pool import SimpleConnectionPool
 from flask.ext.login import UserMixin
 from uuid import uuid4 as uuid
+from flaskext.bcrypt import generate_password_hash
 
 class User(UserMixin):
     
     def __init__(self, id, email, passw):
         self.id = id
         self.email = email
-        self.passw = passw
+        self.password = passw
 
 class Datastore(object):
     """
@@ -46,7 +47,7 @@ class Datastore(object):
         assert(email != None and password != None)
         conn, cur = self.start_op()
         id = uuid()
-        cur.execute("INSERT INTO users (id, email, password) VALUES (%s, %s, %s)", [str(id), email, password])
+        cur.execute("INSERT INTO users (id, email, password) VALUES (%s, %s, %s)", [str(id), email, generate_password_hash(password)])
         self.close_op(conn)
         return id
             
