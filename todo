@@ -1,0 +1,9 @@
+Flask links:
+
+flask-admin:  http://flask-admin.readthedocs.org/en/latest/
+flask-assets: http://elsdoerfer.name/docs/flask-assets/
+flask-bcrypt: http://packages.python.org/Flask-Bcrypt/
+flask-login: http://packages.python.org/Flask-Login/
+flask-principal: http://packages.python.org/Flask-Principal/
+flask-sqlalchemy: http://packages.python.org/Flask-SQLAlchemy/
+flask-uploads: http://packages.python.org/Flask-Uploads/
