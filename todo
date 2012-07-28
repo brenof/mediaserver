@@ -1,13 +1,2 @@
-#Flask links:
-
-#flask-admin:  http://flask-admin.readthedocs.org/en/latest/
-#flask-assets: http://elsdoerfer.name/docs/flask-assets/
-#flask-bcrypt: http://packages.python.org/Flask-Bcrypt/
-sudo easy_install flask-bcrypt;
-#flask-login: http://packages.python.org/Flask-Login/
-sudo easy_install flask-login
-#flask-principal: http://packages.python.org/Flask-Principal/
-#flask-sqlalchemy: http://packages.python.org/Flask-SQLAlchemy/
-#flask-uploads: http://packages.python.org/Flask-Uploads/
-#flask-wtf
-sudo easy_install flask-wtf;
+- add proper logging
+- add proper error handling
